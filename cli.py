@@ -35,7 +35,7 @@ class CLI:
     def reminder_cli(self):
         print("Reminder:")
         op1, op2 = self.get_operands()
-        #todo use calculator to calculate reminder
+        print(self.calculator.reminder(op1, op2))
 
     def power_cli(self):
         print("Power:")
