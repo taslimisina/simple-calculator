@@ -30,7 +30,7 @@ class CLI:
     def division_cli(self):
         print("Division:")
         op1, op2 = self.get_operands()
-        # todo use calculator to calculate results
+        print(self.calculator.division(op1, op2))
 
     def reminder_cli(self):
         print("Reminder:")
