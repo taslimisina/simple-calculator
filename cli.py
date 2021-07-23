@@ -40,7 +40,7 @@ class CLI:
     def power_cli(self):
         print("Power:")
         op1, op2 = self.get_operands()
-        #todo use calculator to calculate results
+        print(self.calculator.pow(op1, op2))
 
     def start_cli(self):
         while True:
