@@ -19,3 +19,6 @@ class Calculator:
     def reminder(self, a, b):
         return a % b
 
+
+    def pow(self, a, b):
+        return a ** b
