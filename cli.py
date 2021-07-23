@@ -15,31 +15,37 @@ class CLI:
     def addition_cli(self):
         print("Addition:")
         op1, op2 = self.get_operands()
+        print("Result:")
         print(self.calculator.add(op1, op2))
 
     def subtraction_cli(self):
         print("Subtraction:")
         op1, op2 = self.get_operands()
+        print("Result:")
         print(self.calculator.sub(op1, op2))
 
     def multiplication_cli(self):
         print("Multiplication:")
         op1, op2 = self.get_operands()
+        print("Result:")
         print(self.calculator.multiply(op1, op2))
 
     def division_cli(self):
         print("Division:")
         op1, op2 = self.get_operands()
+        print("Result:")
         print(self.calculator.division(op1, op2))
 
     def reminder_cli(self):
-        print("Reminder:")
+        print("Remainder:")
         op1, op2 = self.get_operands()
+        print("Result:")
         print(self.calculator.reminder(op1, op2))
 
     def power_cli(self):
         print("Power:")
         op1, op2 = self.get_operands()
+        print("Result:")
         print(self.calculator.pow(op1, op2))
 
     def start_cli(self):
