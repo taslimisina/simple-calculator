@@ -1,4 +1,9 @@
+from Calculator import Calculator
+
+
 class CLI:
+    def __init__(self):
+        self.calculator = Calculator()
 
     def get_operands(self):
         print("Input Your First Number:")
@@ -10,7 +15,7 @@ class CLI:
     def addition_cli(self):
         print("Addition:")
         op1, op2 = self.get_operands()
-        #todo use calculator to calculate results
+        return self.calculator.add(op1, op2)
 
     def subtraction_cli(self):
         print("Subtraction:")
