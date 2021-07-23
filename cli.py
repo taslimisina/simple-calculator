@@ -1,4 +1,9 @@
+from Calculator import Calculator
+
+
 class CLI:
+    def __init__(self):
+        self.calculator = Calculator()
 
     def get_operands(self):
         print("Input Your First Number:")
@@ -10,39 +15,39 @@ class CLI:
     def addition_cli(self):
         print("Addition:")
         op1, op2 = self.get_operands()
-        #todo use calculator to calculate results
+        print(self.calculator.add(op1, op2))
 
     def subtraction_cli(self):
         print("Subtraction:")
         op1, op2 = self.get_operands()
-        #todo use calculator to calculate results
+        print(self.calculator.sub(op1, op2))
 
     def multiplication_cli(self):
         print("Multiplication:")
         op1, op2 = self.get_operands()
-        #todo use calculator to calculate multiplication
+        print(self.calculator.multiply(op1, op2))
 
     def division_cli(self):
         print("Division:")
         op1, op2 = self.get_operands()
-        # todo use calculator to calculate results
+        print(self.calculator.division(op1, op2))
 
     def reminder_cli(self):
         print("Reminder:")
         op1, op2 = self.get_operands()
-        #todo use calculator to calculate reminder
+        print(self.calculator.reminder(op1, op2))
 
     def power_cli(self):
         print("Power:")
         op1, op2 = self.get_operands()
-        #todo use calculator to calculate results
+        print(self.calculator.pow(op1, op2))
 
     def start_cli(self):
         while True:
             print("Simple Calculator")
             print("Please Select Your Operation")
             print("1. Addition")
-            print("2. subtraction")
+            print("2. Subtraction")
             print("3. Multiplication")
             print("4. Division")
             print("5. Reminder")
