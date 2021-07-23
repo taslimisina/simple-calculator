@@ -25,7 +25,12 @@ class CLI:
     def division_cli(self):
         print("Division:")
         op1, op2 = self.get_operands()
-        #todo use calculator to calculate results
+        # todo use calculator to calculate results
+
+    def reminder_cli(self):
+        print("Reminder:")
+        op1, op2 = self.get_operands()
+        #todo use calculator to calculate reminder
 
     def power_cli(self):
         print("Power:")
@@ -40,6 +45,7 @@ class CLI:
             print("2. subtraction")
             print("3. Multiplication")
             print("4. Division")
+            print("5. Reminder")
             print("6. Power")
             print("10. Exit")
             operation = input()
@@ -51,6 +57,8 @@ class CLI:
                 self.multiplication_cli()
             elif operation == '4':
                 self.division_cli()
+            elif operation == '5':
+                self.reminder_cli()
             elif operation == '6':
                 self.power_cli()
             elif operation == '10':
