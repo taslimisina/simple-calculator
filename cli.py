@@ -15,7 +15,7 @@ class CLI:
     def addition_cli(self):
         print("Addition:")
         op1, op2 = self.get_operands()
-        return self.calculator.add(op1, op2)
+        print(self.calculator.add(op1, op2))
 
     def subtraction_cli(self):
         print("Subtraction:")
@@ -25,7 +25,7 @@ class CLI:
     def multiplication_cli(self):
         print("Multiplication:")
         op1, op2 = self.get_operands()
-        #todo use calculator to calculate multiplication
+        print(self.calculator.multiply(op1, op2))
 
     def division_cli(self):
         print("Division:")
@@ -47,7 +47,7 @@ class CLI:
             print("Simple Calculator")
             print("Please Select Your Operation")
             print("1. Addition")
-            print("2. subtraction")
+            print("2. Subtraction")
             print("3. Multiplication")
             print("4. Division")
             print("5. Reminder")
