@@ -17,6 +17,11 @@ class CLI:
         op1, op2 = self.get_operands()
         #todo use calculator to calculate results
 
+    def multiplication_cli(self):
+        print("Multiplication:")
+        op1, op2 = self.get_operands()
+        #todo use calculator to calculate multiplication
+
     def division_cli(self):
         print("Division:")
         op1, op2 = self.get_operands()
@@ -28,6 +33,7 @@ class CLI:
             print("Please Select Your Operation")
             print("1. Addition")
             print("2. subtraction")
+            print("3. Multiplication")
             print("4. Division")
             print("10. Exit")
             operation = input()
@@ -35,6 +41,8 @@ class CLI:
                 self.addition_cli()
             elif operation == '2':
                 self.subtraction_cli()
+            elif operation == '3':
+                self.multiplication_cli()
             elif operation == '4':
                 self.division_cli()
             elif operation == '10':
