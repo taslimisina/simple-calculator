@@ -10,3 +10,7 @@ class Calculator:
 
     def multiply(self, a, b):
         return a * b
+
+
+    def division(self, a, b):
+        return a / b
