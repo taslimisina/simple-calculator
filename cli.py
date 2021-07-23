@@ -1,4 +1,12 @@
 class CLI:
+
+    def get_operands(self):
+        print("Input Your First Number:")
+        first_num = int(input())
+        print("Input Your Second Number:")
+        second_num = int(input())
+        return first_num, second_num
+
     def start_cli(self):
         while True:
             print("Simple Calculator")
