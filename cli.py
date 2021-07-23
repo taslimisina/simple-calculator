@@ -22,6 +22,11 @@ class CLI:
         op1, op2 = self.get_operands()
         #todo use calculator to calculate multiplication
 
+    def division_cli(self):
+        print("Division:")
+        op1, op2 = self.get_operands()
+        # todo use calculator to calculate results
+
     def reminder_cli(self):
         print("Reminder:")
         op1, op2 = self.get_operands()
@@ -34,7 +39,9 @@ class CLI:
             print("1. Addition")
             print("2. subtraction")
             print("3. Multiplication")
+            print("4. Division")
             print("5. Reminder")
+            print("10. Exit")
             operation = input()
             if operation == '1':
                 self.addition_cli()
@@ -42,8 +49,12 @@ class CLI:
                 self.subtraction_cli()
             elif operation == '3':
                 self.multiplication_cli()
+            elif operation == '4':
+                self.division_cli()
             elif operation == '5':
                 self.reminder_cli()
+            elif operation == '10':
+                break
         print("Thank You For Using Our Calculator")
 
 
