@@ -7,13 +7,21 @@ class CLI:
         second_num = int(input())
         return first_num, second_num
 
+    def addition_cli(self):
+        print("Addition:")
+        op1, op2 = self.get_operands()
+        #todo use calculator to calculate results
+
     def start_cli(self):
         while True:
             print("Simple Calculator")
             print("Please Select Your Operation")
-            print("1. Exit")
+            print("1. Addition")
+            print("2. Exit")
             operation = input()
             if operation == '1':
+                self.addition_cli()
+            elif operation == '2':
                 break
         print("Thank You For Using Our Calculator")
 
