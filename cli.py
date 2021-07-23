@@ -20,7 +20,7 @@ class CLI:
     def subtraction_cli(self):
         print("Subtraction:")
         op1, op2 = self.get_operands()
-        #todo use calculator to calculate results
+        print(self.calculator.sub(op1, op2))
 
     def multiplication_cli(self):
         print("Multiplication:")
