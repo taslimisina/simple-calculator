@@ -49,14 +49,15 @@ class CLI:
         print(self.calculator.pow(op1, op2))
 
     def start_cli(self):
+        print("Simple Calculator")
         while True:
-            print("Simple Calculator")
+            print()
             print("Please Select Your Operation")
             print("1. Addition")
             print("2. Subtraction")
             print("3. Multiplication")
             print("4. Division")
-            print("5. Reminder")
+            print("5. Remainder")
             print("6. Power")
             print("10. Exit")
             operation = input()
