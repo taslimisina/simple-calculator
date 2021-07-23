@@ -27,6 +27,11 @@ class CLI:
         op1, op2 = self.get_operands()
         #todo use calculator to calculate results
 
+    def power_cli(self):
+        print("Power:")
+        op1, op2 = self.get_operands()
+        #todo use calculator to calculate results
+
     def start_cli(self):
         while True:
             print("Simple Calculator")
@@ -35,6 +40,7 @@ class CLI:
             print("2. subtraction")
             print("3. Multiplication")
             print("4. Division")
+            print("6. Power")
             print("10. Exit")
             operation = input()
             if operation == '1':
@@ -45,6 +51,8 @@ class CLI:
                 self.multiplication_cli()
             elif operation == '4':
                 self.division_cli()
+            elif operation == '6':
+                self.power_cli()
             elif operation == '10':
                 break
         print("Thank You For Using Our Calculator")
