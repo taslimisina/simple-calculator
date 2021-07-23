@@ -17,18 +17,26 @@ class CLI:
         op1, op2 = self.get_operands()
         #todo use calculator to calculate results
 
+    def division_cli(self):
+        print("Division:")
+        op1, op2 = self.get_operands()
+        #todo use calculator to calculate results
+
     def start_cli(self):
         while True:
             print("Simple Calculator")
             print("Please Select Your Operation")
             print("1. Addition")
             print("2. subtraction")
+            print("4. Division")
             print("10. Exit")
             operation = input()
             if operation == '1':
                 self.addition_cli()
             elif operation == '2':
                 self.subtraction_cli()
+            elif operation == '4':
+                self.division_cli()
             elif operation == '10':
                 break
         print("Thank You For Using Our Calculator")
