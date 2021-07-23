@@ -1,4 +1,4 @@
-from Calculator import Calculator
+from calculator import Calculator
 
 
 class CLI:
@@ -34,19 +34,19 @@ class CLI:
         print("Division:")
         op1, op2 = self.get_operands()
         print("Result:")
-        print(self.calculator.division(op1, op2))
+        print(self.calculator.divide(op1, op2))
 
     def reminder_cli(self):
         print("Remainder:")
         op1, op2 = self.get_operands()
         print("Result:")
-        print(self.calculator.reminder(op1, op2))
+        print(self.calculator.remainder(op1, op2))
 
     def power_cli(self):
         print("Power:")
         op1, op2 = self.get_operands()
         print("Result:")
-        print(self.calculator.pow(op1, op2))
+        print(self.calculator.power(op1, op2))
 
     def start_cli(self):
         print("Simple Calculator")
