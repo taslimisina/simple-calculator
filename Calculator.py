@@ -14,3 +14,8 @@ class Calculator:
 
     def division(self, a, b):
         return a / b
+
+
+    def reminder(self, a, b):
+        return a % b
+
